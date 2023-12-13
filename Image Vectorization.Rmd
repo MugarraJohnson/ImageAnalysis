@@ -1,0 +1,40 @@
+---
+title: "Python Notebook"
+output: html_notebook
+---
+
+```{python}
+import numpy as np
+from PIL import Image
+import pandas as pd
+```
+
+Importing Image
+```{python}
+img = Image.open("D:/OneDrive/Pictures/IMG_0441 1.jpeg")
+```
+
+
+Converting Image to gray scale
+```{python}
+img_gray = img.convert('L')
+```
+
+
+Converting Image into 3D Numpy array
+```{python}
+X = np.array(img)
+print(X.shape)
+```
+Coverting Image into gray scale
+```{python}
+Y = np.array(img_gray)
+print(Y.shape)
+```
+
+Converting Image matrix into a vector
+```{python}
+Z = X.flatten()
+print(Z.shape)
+```
+
