@@ -17,13 +17,17 @@ Norm of a vector
 a = np.array([1,2,3,4,5])
 np.linalg.norm(a)
 ```
+
 Dot Product
+
 ```{python}
 a = np.array([1,2,3,4,5])
 b = np.array([5,6,7,8,9])
 np.dot(a,b)
 ```
+
 Cauchy-Schwarz Inequality
+
 ```{python}
 np.dot(a,b)/(np.linalg.norm(a)*np.linalg.norm(b))
 ```
@@ -35,6 +39,7 @@ c = wiki.page('Tarzan', auto_suggest = False)
 ```
 
 Counting Number of words in each book
+
 ```{python}
 print(len(a.content.split()))
 print(len(b.content.split()))
@@ -42,13 +47,14 @@ print(len(c.content.split()))
 ```
 
 Import text to vectors
+
 ```{python}
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 
 ```
 
-Vectorize the article
+Vector the article
+
 ```{python}
 
 ```
-
